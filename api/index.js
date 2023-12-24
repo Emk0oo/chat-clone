@@ -7,6 +7,7 @@ const User = require("./models/User");
 const url = "localhost:4000/test";
 dotenv.config();
 mongoose.connect(process.env.MONGO_URL);
+console.log("mongoURL", process.env.MONGO_URL);
 const jwtSecret = process.env.JWT_SECRET;
 
 const app = express();
